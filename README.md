@@ -8,7 +8,7 @@ Welcome to my learning journal for **Tangible Design & Fabrication (TDF)**! This
 
 All ideation, sketching, and early documentation from the first half of the semester are hosted on FigJam:
 
-👉 [**View Weeks 1–9 Documentation on FigJam**](https://www.figma.com/board/YOUR_FIGJAM_LINK_HERE)
+👉 [**View Weeks 1–9 Documentation on FigJam**](figma.com/board/hXR1BTe4SbWHZ1LpmUD97Q/TDF-journal?t=edSIyHwZtvgwDc9v-0)
 
 ---
 
