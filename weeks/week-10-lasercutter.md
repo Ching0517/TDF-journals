@@ -30,7 +30,8 @@ To ensure a comfortable fit, I tested sizing before finalizing the cut:
 
 ## 4. Fabrication & Result
 
-圖!!
+<img width="1345" height="877" alt="image" src="https://github.com/user-attachments/assets/516aa2a4-6348-437e-b42a-d86ca2d269b9" />
+<img width="964" height="877" alt="image" src="https://github.com/user-attachments/assets/aab81acd-2d1e-4bc8-919d-a54e3e60093a" />
 
 ---
 
