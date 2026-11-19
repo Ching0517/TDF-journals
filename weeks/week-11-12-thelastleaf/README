@@ -1,0 +1,56 @@
+# 🍂 The Last Leaf — Week 11–12
+
+[← Back to the main journal](../../README.md)
+
+Expressive Mechanics · <your name>
+
+*The Last Leaf* is a kinetic installation. A real leaf on a hinged branch gently breathes. When a
+visitor holds a hand near the sensor, the leaf drops. The screen goes dark, a sketched leaf
+appears, and the visitor paints it in the air with hand tracking. As the painted area grows, a
+servo winds the real leaf back up, and the painted leaf joins the tree on screen.
+
+Each entry follows the same pattern: **goal → what I did → decisions and why → problems and
+iteration → next**.
+
+## Entries
+
+| Week | Date | Entry |
+|---|---|---|
+| Week 11 | Nov 6 | [Brief, references, and the first mechanism idea](2026-11-06.md) |
+| Week 11 | Nov 7 | [Wave machine experiments and why I left them](2026-11-07.md) |
+| Week 11 | Nov 8 | [Finding the sector gear: wind, wind, let go](2026-11-08.md) |
+| Week 12 | Nov 9 | [First print plate and the first servo test](2026-11-09.md) |
+| Week 12 | Nov 10 | [Branch v1, the screen, the frame, and the first drop](2026-11-10.md) |
+| Week 12 | Nov 11 | [Fixing the motion, adding the sensor, linking to p5.js](2026-11-11.md) |
+| Week 12 | Nov 12 | [Making the object hold together and look finished](2026-11-12.md) |
+
+## Diagrams
+
+**System diagram** — what talks to what. The visitor's hand and movement feed two inputs
+(ultrasonic sensor, webcam); the Arduino and the p5.js sketch exchange messages over USB; the
+outputs are the gear train that moves the real leaf, and the screen.
+
+![System diagram](../../assets/images/thelastleaf/system_diagram.png)
+
+My first hand sketch of the system mixed the parts and the states in one picture, which is why I
+split it into a system diagram and a state diagram.
+
+![First system sketch by hand](../../assets/images/thelastleaf/system_sketch_by_hand.jpg)
+
+**State diagram** — what happens over time: IDLE → DROP → WAIT → PAINT → RETURN, with what the
+physical piece and the screen each do in every state, and the trigger for each step.
+
+![State diagram](../../assets/images/thelastleaf/state_diagram.png)
+
+**Circuit diagram** — servo on D9, HC-SR04 on D7/D6, 100 µF capacitor across the 5 V rail.
+
+![Circuit diagram](../../assets/images/thelastleaf/circuit_diagram.png)
+
+---
+
+CAD and laser-cut files for this project are in [`assets/cad-files/thelastleaf`](../../assets/cad-files/thelastleaf/).
+
+*Process note:* I used Claude (Anthropic) as a design and coding assistant during this project
+— to look up mechanism references, generate gear and laser-cut geometry, write and debug code,
+and draw the diagrams. Images labelled "CAD render" are previews of those generated files;
+the photos are of my own build.
